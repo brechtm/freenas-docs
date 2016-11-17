@@ -36,7 +36,8 @@ project = brand + u' User Guide'
 master_doc = 'freenas'
 extensions = [
     'sphinx.ext.ifconfig',
-    'sphinxcontrib.httpdomain'
+    'sphinxcontrib.httpdomain',
+    'rinoh.frontend.sphinx'
 ]
 numfig = True
 numfig_secnum_depth = (2)
@@ -275,6 +276,8 @@ latex_documents = [
   ('freenas', 'FreeNAS.tex', u'FreeNAS Documentation',
    u'iXsystems', 'manual'),
 ]
+
+rinoh_documents = [('freenas', 'FreeNAS', 'FreeNAS Documentation', 'iXsystems')]
 
 if tags.has('truenas'):
     latex_documents = [
