@@ -278,6 +278,7 @@ latex_documents = [
 ]
 
 rinoh_documents = [('freenas', 'FreeNAS', 'FreeNAS Documentation', 'iXsystems')]
+rinoh_stylesheet = 'freenas.rts'
 
 if tags.has('truenas'):
     latex_documents = [

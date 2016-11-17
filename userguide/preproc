@@ -68,7 +68,8 @@ usage: $prog -h
        -h  show summary of command line options and exit
 
        -c  space-delimited list of files and directories to copy to
-           output directory, default is 'conf.py _static artwork images'
+           output directory, default is 'conf.py _static artwork images
+           freenas.rts'
 
        -o  output directory to create, default is "$defaultoutdir"
            (Note: existing contents are erased!)
@@ -221,7 +222,7 @@ sub parseinput {
     $tag     = $opt_t;
 
     unless ( $opt_c ) {
-        $opt_c = 'conf.py _static artwork images';
+        $opt_c = 'conf.py _static artwork images freenas.rts';
     }
 
     @copyfiles = split(/\s+/, $opt_c);

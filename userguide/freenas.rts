@@ -1,0 +1,21 @@
+[STYLESHEET]
+name = FreeNAS
+base = sphinx
+
+[VARIABLES]
+thinner_black_stroke = 0.2pt, #000
+
+[table]
+repeat_head = true
+
+[table cell]
+vertical_align = top
+
+[table body cell paragraph]
+text_align = left
+
+[table top border]
+stroke = $(thinner_black_stroke)
+
+[table cell border : TableCellBorder]
+stroke = $(thinner_black_stroke)
