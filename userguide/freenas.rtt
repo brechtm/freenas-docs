@@ -1,0 +1,13 @@
+[TEMPLATE_CONFIGURATION]
+name = FreeNAS Documentation
+
+stylesheet = freenas.rts
+
+[SectionTitles]
+contents = 'Contents'
+
+[AdmonitionTitles]
+warning = 'Warning:'
+
+[cover_right_page]
+background = 'images/fn93cover.jpg' scale=fill
