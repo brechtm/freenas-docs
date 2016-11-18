@@ -283,17 +283,8 @@ from rinoh.template import FixedDocumentPartTemplate, PageTemplate
 from rinoh.templates import Book
 
 
-class BookWithCover(Book):
-    parts = OverrideDefault(['cover', 'title', 'front_matter',
-                             'contents', 'back_matter'])
-    cover = FixedDocumentPartTemplate(drop_if_empty=False,
-                                      end_at_page='left')
-    cover_page = PageTemplate(base='page')
-    cover_left_page = PageTemplate(base='page')
-    cover_right_page = PageTemplate(base='page')
-
 rinoh_documents = [('freenas', 'FreeNAS', 'FreeNAS Documentation', 'iXsystems')]
-rinoh_template = BookWithCover.ConfigurationFile('freenas.rtt')
+rinoh_template = 'freenas.rtt'
 
 if tags.has('truenas'):
     latex_documents = [

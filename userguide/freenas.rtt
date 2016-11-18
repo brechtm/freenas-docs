@@ -1,6 +1,13 @@
 [TEMPLATE_CONFIGURATION]
 name = FreeNAS Documentation
+template = book
 
+parts =
+    cover
+    title
+    front_matter
+    contents
+    back_matter
 stylesheet = freenas.rts
 
 [SectionTitles]
@@ -9,5 +16,5 @@ contents = 'Contents'
 [AdmonitionTitles]
 warning = 'Warning:'
 
-[cover_right_page]
+[cover_page]
 background = 'images/fn93cover.jpg' scale=fill
